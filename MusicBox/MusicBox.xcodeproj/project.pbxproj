@@ -21,6 +21,10 @@
 		BA54FD1727442863001FDDD2 /* Spotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54FD1527442863001FDDD2 /* Spotify.swift */; };
 		BA54FD19274428D7001FDDD2 /* ExamplesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54FD18274428D7001FDDD2 /* ExamplesListView.swift */; };
 		BA54FD1A274428D7001FDDD2 /* ExamplesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54FD18274428D7001FDDD2 /* ExamplesListView.swift */; };
+		BA54FD1D274433A8001FDDD2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54FD1C274433A8001FDDD2 /* LoginView.swift */; };
+		BA54FD1E274433A8001FDDD2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54FD1C274433A8001FDDD2 /* LoginView.swift */; };
+		BA54FD2027443439001FDDD2 /* ImageNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54FD1F27443439001FDDD2 /* ImageNames.swift */; };
+		BA54FD2127443439001FDDD2 /* ImageNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54FD1F27443439001FDDD2 /* ImageNames.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,9 @@
 		BA54FD1227442808001FDDD2 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
 		BA54FD1527442863001FDDD2 /* Spotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spotify.swift; sourceTree = "<group>"; };
 		BA54FD18274428D7001FDDD2 /* ExamplesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesListView.swift; sourceTree = "<group>"; };
+		BA54FD1B2744313C001FDDD2 /* MusicBox--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MusicBox--iOS--Info.plist"; sourceTree = "<group>"; };
+		BA54FD1C274433A8001FDDD2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BA54FD1F27443439001FDDD2 /* ImageNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNames.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 		BA54FCE5274420E0001FDDD2 = {
 			isa = PBXGroup;
 			children = (
+				BA54FD1B2744313C001FDDD2 /* MusicBox--iOS--Info.plist */,
 				BA54FCEA274420E0001FDDD2 /* MusicBox */,
 				BA54FCF9274420E1001FDDD2 /* macOS */,
 				BA54FCF3274420E1001FDDD2 /* Products */,
@@ -105,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				BA54FCEC274420E0001FDDD2 /* RootView.swift */,
+				BA54FD1C274433A8001FDDD2 /* LoginView.swift */,
 				BA54FD18274428D7001FDDD2 /* ExamplesListView.swift */,
 			);
 			path = Views;
@@ -114,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				BA54FD1227442808001FDDD2 /* AlertItem.swift */,
+				BA54FD1F27443439001FDDD2 /* ImageNames.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -224,9 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA54FD1D274433A8001FDDD2 /* LoginView.swift in Sources */,
 				BA54FCFD274420E1001FDDD2 /* RootView.swift in Sources */,
 				BA54FD19274428D7001FDDD2 /* ExamplesListView.swift in Sources */,
 				BA54FD1327442808001FDDD2 /* AlertItem.swift in Sources */,
+				BA54FD2027443439001FDDD2 /* ImageNames.swift in Sources */,
 				BA54FD1627442863001FDDD2 /* Spotify.swift in Sources */,
 				BA54FCFB274420E1001FDDD2 /* MusicBoxApp.swift in Sources */,
 			);
@@ -236,9 +248,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA54FD1E274433A8001FDDD2 /* LoginView.swift in Sources */,
 				BA54FCFE274420E1001FDDD2 /* RootView.swift in Sources */,
 				BA54FD1A274428D7001FDDD2 /* ExamplesListView.swift in Sources */,
 				BA54FD1427442808001FDDD2 /* AlertItem.swift in Sources */,
+				BA54FD2127443439001FDDD2 /* ImageNames.swift in Sources */,
 				BA54FD1727442863001FDDD2 /* Spotify.swift in Sources */,
 				BA54FCFC274420E1001FDDD2 /* MusicBoxApp.swift in Sources */,
 			);
@@ -368,6 +382,7 @@
 				DEVELOPMENT_TEAM = VJ3XGT65D5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MusicBox--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -398,6 +413,7 @@
 				DEVELOPMENT_TEAM = VJ3XGT65D5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MusicBox--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
