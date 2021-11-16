@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA54FCFB274420E1001FDDD2 /* MusicBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54FCEB274420E0001FDDD2 /* MusicBoxApp.swift */; };
+		BA54FCFC274420E1001FDDD2 /* MusicBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54FCEB274420E0001FDDD2 /* MusicBoxApp.swift */; };
+		BA54FCFD274420E1001FDDD2 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54FCEC274420E0001FDDD2 /* RootView.swift */; };
+		BA54FCFE274420E1001FDDD2 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54FCEC274420E0001FDDD2 /* RootView.swift */; };
+		BA54FCFF274420E1001FDDD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA54FCED274420E1001FDDD2 /* Assets.xcassets */; };
+		BA54FD00274420E1001FDDD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA54FCED274420E1001FDDD2 /* Assets.xcassets */; };
+		BA54FD0B27442194001FDDD2 /* SpotifyAPI in Frameworks */ = {isa = PBXBuildFile; productRef = BA54FD0A27442194001FDDD2 /* SpotifyAPI */; };
+		BA54FD0E274425ED001FDDD2 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = BA54FD0D274425ED001FDDD2 /* KeychainAccess */; };
+		BA54FD1327442808001FDDD2 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54FD1227442808001FDDD2 /* AlertItem.swift */; };
+		BA54FD1427442808001FDDD2 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54FD1227442808001FDDD2 /* AlertItem.swift */; };
+		BA54FD1627442863001FDDD2 /* Spotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54FD1527442863001FDDD2 /* Spotify.swift */; };
+		BA54FD1727442863001FDDD2 /* Spotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54FD1527442863001FDDD2 /* Spotify.swift */; };
+		BA54FD19274428D7001FDDD2 /* ExamplesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54FD18274428D7001FDDD2 /* ExamplesListView.swift */; };
+		BA54FD1A274428D7001FDDD2 /* ExamplesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54FD18274428D7001FDDD2 /* ExamplesListView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BA54FCEB274420E0001FDDD2 /* MusicBoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicBoxApp.swift; sourceTree = "<group>"; };
+		BA54FCEC274420E0001FDDD2 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		BA54FCED274420E1001FDDD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA54FCF2274420E1001FDDD2 /* MusicBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA54FCF8274420E1001FDDD2 /* MusicBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA54FCFA274420E1001FDDD2 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		BA54FD1227442808001FDDD2 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		BA54FD1527442863001FDDD2 /* Spotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spotify.swift; sourceTree = "<group>"; };
+		BA54FD18274428D7001FDDD2 /* ExamplesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesListView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA54FCEF274420E1001FDDD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA54FD0E274425ED001FDDD2 /* KeychainAccess in Frameworks */,
+				BA54FD0B27442194001FDDD2 /* SpotifyAPI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA54FCF5274420E1001FDDD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA54FCE5274420E0001FDDD2 = {
+			isa = PBXGroup;
+			children = (
+				BA54FCEA274420E0001FDDD2 /* MusicBox */,
+				BA54FCF9274420E1001FDDD2 /* macOS */,
+				BA54FCF3274420E1001FDDD2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA54FCEA274420E0001FDDD2 /* MusicBox */ = {
+			isa = PBXGroup;
+			children = (
+				BA54FCEB274420E0001FDDD2 /* MusicBoxApp.swift */,
+				BA54FD0F274427BD001FDDD2 /* Model */,
+				BA54FD10274427C4001FDDD2 /* Views */,
+				BA54FD11274427CD001FDDD2 /* Utilities */,
+				BA54FCED274420E1001FDDD2 /* Assets.xcassets */,
+			);
+			path = MusicBox;
+			sourceTree = "<group>";
+		};
+		BA54FCF3274420E1001FDDD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA54FCF2274420E1001FDDD2 /* MusicBox.app */,
+				BA54FCF8274420E1001FDDD2 /* MusicBox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA54FCF9274420E1001FDDD2 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				BA54FCFA274420E1001FDDD2 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		BA54FD0F274427BD001FDDD2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA54FD1527442863001FDDD2 /* Spotify.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA54FD10274427C4001FDDD2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA54FCEC274420E0001FDDD2 /* RootView.swift */,
+				BA54FD18274428D7001FDDD2 /* ExamplesListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BA54FD11274427CD001FDDD2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BA54FD1227442808001FDDD2 /* AlertItem.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA54FCF1274420E1001FDDD2 /* MusicBox (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA54FD03274420E1001FDDD2 /* Build configuration list for PBXNativeTarget "MusicBox (iOS)" */;
+			buildPhases = (
+				BA54FCEE274420E1001FDDD2 /* Sources */,
+				BA54FCEF274420E1001FDDD2 /* Frameworks */,
+				BA54FCF0274420E1001FDDD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MusicBox (iOS)";
+			packageProductDependencies = (
+				BA54FD0A27442194001FDDD2 /* SpotifyAPI */,
+				BA54FD0D274425ED001FDDD2 /* KeychainAccess */,
+			);
+			productName = "MusicBox (iOS)";
+			productReference = BA54FCF2274420E1001FDDD2 /* MusicBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA54FCF7274420E1001FDDD2 /* MusicBox (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA54FD06274420E1001FDDD2 /* Build configuration list for PBXNativeTarget "MusicBox (macOS)" */;
+			buildPhases = (
+				BA54FCF4274420E1001FDDD2 /* Sources */,
+				BA54FCF5274420E1001FDDD2 /* Frameworks */,
+				BA54FCF6274420E1001FDDD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MusicBox (macOS)";
+			productName = "MusicBox (macOS)";
+			productReference = BA54FCF8274420E1001FDDD2 /* MusicBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA54FCE6274420E0001FDDD2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					BA54FCF1274420E1001FDDD2 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					BA54FCF7274420E1001FDDD2 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = BA54FCE9274420E0001FDDD2 /* Build configuration list for PBXProject "MusicBox" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA54FCE5274420E0001FDDD2;
+			packageReferences = (
+				BA54FD0927442194001FDDD2 /* XCRemoteSwiftPackageReference "SpotifyAPI" */,
+				BA54FD0C274425ED001FDDD2 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
+			productRefGroup = BA54FCF3274420E1001FDDD2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA54FCF1274420E1001FDDD2 /* MusicBox (iOS) */,
+				BA54FCF7274420E1001FDDD2 /* MusicBox (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA54FCF0274420E1001FDDD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA54FCFF274420E1001FDDD2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA54FCF6274420E1001FDDD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA54FD00274420E1001FDDD2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA54FCEE274420E1001FDDD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA54FCFD274420E1001FDDD2 /* RootView.swift in Sources */,
+				BA54FD19274428D7001FDDD2 /* ExamplesListView.swift in Sources */,
+				BA54FD1327442808001FDDD2 /* AlertItem.swift in Sources */,
+				BA54FD1627442863001FDDD2 /* Spotify.swift in Sources */,
+				BA54FCFB274420E1001FDDD2 /* MusicBoxApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA54FCF4274420E1001FDDD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA54FCFE274420E1001FDDD2 /* RootView.swift in Sources */,
+				BA54FD1A274428D7001FDDD2 /* ExamplesListView.swift in Sources */,
+				BA54FD1427442808001FDDD2 /* AlertItem.swift in Sources */,
+				BA54FD1727442863001FDDD2 /* Spotify.swift in Sources */,
+				BA54FCFC274420E1001FDDD2 /* MusicBoxApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BA54FD01274420E1001FDDD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA54FD02274420E1001FDDD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BA54FD04274420E1001FDDD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VJ3XGT65D5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codigohifi.MusicBox;
+				PRODUCT_NAME = MusicBox;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA54FD05274420E1001FDDD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VJ3XGT65D5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codigohifi.MusicBox;
+				PRODUCT_NAME = MusicBox;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA54FD07274420E1001FDDD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VJ3XGT65D5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codigohifi.MusicBox;
+				PRODUCT_NAME = MusicBox;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BA54FD08274420E1001FDDD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VJ3XGT65D5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codigohifi.MusicBox;
+				PRODUCT_NAME = MusicBox;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA54FCE9274420E0001FDDD2 /* Build configuration list for PBXProject "MusicBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA54FD01274420E1001FDDD2 /* Debug */,
+				BA54FD02274420E1001FDDD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA54FD03274420E1001FDDD2 /* Build configuration list for PBXNativeTarget "MusicBox (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA54FD04274420E1001FDDD2 /* Debug */,
+				BA54FD05274420E1001FDDD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA54FD06274420E1001FDDD2 /* Build configuration list for PBXNativeTarget "MusicBox (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA54FD07274420E1001FDDD2 /* Debug */,
+				BA54FD08274420E1001FDDD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BA54FD0927442194001FDDD2 /* XCRemoteSwiftPackageReference "SpotifyAPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Peter-Schorn/SpotifyAPI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		BA54FD0C274425ED001FDDD2 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BA54FD0A27442194001FDDD2 /* SpotifyAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA54FD0927442194001FDDD2 /* XCRemoteSwiftPackageReference "SpotifyAPI" */;
+			productName = SpotifyAPI;
+		};
+		BA54FD0D274425ED001FDDD2 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA54FD0C274425ED001FDDD2 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BA54FCE6274420E0001FDDD2 /* Project object */;
+}
